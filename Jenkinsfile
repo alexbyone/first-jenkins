@@ -8,5 +8,11 @@ pipeline {
             }
             
         }
+        stage('Script') {
+            steps {
+                sh '/bin/bash prog1.sh'
+            }
+            
+        }
     }
 }
