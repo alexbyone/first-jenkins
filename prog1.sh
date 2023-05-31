@@ -1,4 +1,4 @@
 #! /bin/bash
-var = ciao
+var=ciao
 touch $var
 ls
