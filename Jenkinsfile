@@ -2,18 +2,11 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
-            input {
-            
-                message "Tutto Pronto?"
-                ok "si"
-                parameters{
-                    string(name:"ENV", defaultValue: "prod")
-                }
-            }
+        stage('Stage1') {
             steps {
-                echo "Creo l\'ambiente di ${ENV} . "
+                sh 'pwd'
             }
+            
         }
     }
 }
